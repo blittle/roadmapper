@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  display: flex;
+}
+
+.button {
+  border: 0;
+  opacity: 0;
+  color: #0074D9;
+  transition: 200ms linear opacity;
+  background: none;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row:hover .button {
+  opacity: 1;
+}
+
+.buttonWrapper:hover .button {
+  opacity: 1;
+}
+
+.button:hover {
+  background: #DDDDDD;
+}
+
+.button:focus {
+  outline: 0;
+}
+

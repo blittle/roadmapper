@@ -1,0 +1,9 @@
+.hrLabel {
+  height: 0px;
+  float: left;
+  position: relative;
+  left: -120px;
+  width: 120px;
+  text-align: center;
+  font-weight: bold;
+}

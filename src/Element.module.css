@@ -1,0 +1,121 @@
+.item {
+  margin: 6px 2px;
+  color: white;
+  padding: 2px 8px;
+  display: inline-flex;
+  align-items: center;
+  line-height: 24px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  position: relative;
+  z-index: 10;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  user-select: none;
+}
+
+.dialog {
+  position: absolute;
+  left: 0px;
+  background: white;
+  height: 50px;
+  border: 1px solid #333;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  height: 22px;
+}
+
+.button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+}
+
+.button:focus {
+  outline: 0;
+}
+.resize {
+  position: absolute;
+  right: 0;
+  width: 4px;
+  height: 50px;
+  cursor: col-resize;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modalContent {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 6px;
+  width: 30%; /* Could be more or less, depending on screen size */
+}
+.input {
+  padding: 4px 8px;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 2px;
+  margin-left: 8px;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.inputBlock {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.inputBlock :global(span:first-child) {
+  width: 100px;
+  text-align: right;
+}
+.save {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 4px 8px;
+  line-height: 1.5;
+  border-radius: 3px;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.save.primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.action {
+  margin-top: 16px;
+  text-align: right;
+}

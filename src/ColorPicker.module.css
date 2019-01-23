@@ -1,0 +1,16 @@
+.colorPicker {
+  position: absolute;
+  z-index: 100;
+  top: 26px;
+  left: 120px;
+}
+
+.color {
+  display: inline-block;
+  width: 60px;
+  height: 20px;
+  border-radius: 8px;
+  border: 2px solid #333;
+  cursor: pointer;
+  margin-left: 8px;
+}

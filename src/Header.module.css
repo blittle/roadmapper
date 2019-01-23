@@ -1,0 +1,22 @@
+.share {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  position: relative;
+  top: 2px;
+  margin-left: 16px;
+  border-radius: 6px;
+}
+
+.share:hover {
+  background: #DDDDDD;
+}
+
+.share img {
+  width: 25px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
